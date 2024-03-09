@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE40B00E-8032-4A27-9576-D87A1A92986D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OfflineExaminationSystem.My.MyApplication</StartupObject>
+    <RootNamespace>OfflineExaminationSystem</RootNamespace>
+    <AssemblyName>OfflineExaminationSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OfflineExaminationSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OfflineExaminationSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEmployee.Designer.vb">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewCourse.Designer.vb">
+      <DependentUpon>frmAddNewCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddQuestion.Designer.vb">
+      <DependentUpon>frmAddQuestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddQuestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddstudimg.Designer.vb">
+      <DependentUpon>frmaddstudimg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddstudimg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApprovalStudent.Designer.vb">
+      <DependentUpon>frmApprovalStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApprovalStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditQuestion.Designer.vb">
+      <DependentUpon>frmEditQuestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditQuestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeViewList.Designer.vb">
+      <DependentUpon>frmEmployeeViewList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeViewList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamPasschange.Designer.vb">
+      <DependentUpon>frmExamPasschange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamPasschange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamQuestion.Designer.vb">
+      <DependentUpon>frmExamQuestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamQuestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamResult.Designer.vb">
+      <DependentUpon>frmExamResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamTest.Designer.vb">
+      <DependentUpon>frmExamTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfees.Designer.vb">
+      <DependentUpon>frmfees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeesPayment.Designer.vb">
+      <DependentUpon>frmFeesPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeesPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeesPaymentDatails.Designer.vb">
+      <DependentUpon>frmFeesPaymentDatails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeesPaymentDatails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmaster.Designer.vb">
+      <DependentUpon>frmmaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.vb">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreadyexam.Designer.vb">
+      <DependentUpon>frmreadyexam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmreadyexam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistration.Designer.vb">
+      <DependentUpon>frmRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentHistory.Designer.vb">
+      <DependentUpon>frmStudentHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateQuestion.Designer.vb">
+      <DependentUpon>frmUpdateQuestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateQuestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewCourse.resx">
+      <DependentUpon>frmAddNewCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddQuestion.resx">
+      <DependentUpon>frmAddQuestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddstudimg.resx">
+      <DependentUpon>frmaddstudimg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApprovalStudent.resx">
+      <DependentUpon>frmApprovalStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditQuestion.resx">
+      <DependentUpon>frmEditQuestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeViewList.resx">
+      <DependentUpon>frmEmployeeViewList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamPasschange.resx">
+      <DependentUpon>frmExamPasschange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamQuestion.resx">
+      <DependentUpon>frmExamQuestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamResult.resx">
+      <DependentUpon>frmExamResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamTest.resx">
+      <DependentUpon>frmExamTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfees.resx">
+      <DependentUpon>frmfees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeesPayment.resx">
+      <DependentUpon>frmFeesPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeesPaymentDatails.resx">
+      <DependentUpon>frmFeesPaymentDatails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmaster.resx">
+      <DependentUpon>frmmaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreadyexam.resx">
+      <DependentUpon>frmreadyexam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistration.resx">
+      <DependentUpon>frmRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentHistory.resx">
+      <DependentUpon>frmStudentHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateQuestion.resx">
+      <DependentUpon>frmUpdateQuestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
